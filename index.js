@@ -63,5 +63,5 @@ app.get("/", (request, response) => {
 });
 
 app.listen(3002, async () => {
-    console.log("API Started linstening in port " + port);
+    console.log("API Started linstening in port " + 3002);
 });
