@@ -35,10 +35,10 @@ app.post("/mensagem", (request, response) => {
                     <i>Esta mensagem é gerada automaticamente pela área de CONTATE-NOS do site. Não responder este email.</i>`;  
 
         let emailASerEnviado = {
-            from: process.env.USER,
-            to: process.env.USER,
-            subject: process.env.ASSUNTO,
-            html: msg,
+                from: process.env.USER,
+                to: process.env.USER,
+                subject: process.env.ASSUNTO,
+                html: msg,
             };
 
 
