@@ -59,7 +59,7 @@ app.post("/mensagem", (request, response) => {
 });
 
 app.get("/", (request, response) => {
-    response.send({status: "API para enviar e-mail em pleno funcionamento"});
+    response.send({status: "API para enviar e-mail em pleno funcionamento!"});
 });
 
 app.listen(process.env.PORT || 3003, async () => {
