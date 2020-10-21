@@ -5,7 +5,6 @@ import smtpTransport  from "nodemailer-smtp-transport";
 import dotenv from "dotenv";
 
 const app = express();
-const port = 3000;
 
 dotenv.config();
 
@@ -63,6 +62,6 @@ app.get("/", (request, response) => {
     response.send({status: "API para enviar e-mail em pleno funcionamento"});
 });
 
-app.listen(port, async () => {
+app.listen(3002, async () => {
     console.log("API Started linstening in port " + port);
 });
