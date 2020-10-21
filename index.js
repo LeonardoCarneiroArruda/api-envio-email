@@ -62,6 +62,6 @@ app.get("/", (request, response) => {
     response.send({status: "API para enviar e-mail em pleno funcionamento"});
 });
 
-app.listen(3002, async () => {
-    console.log("API Started linstening in port " + 3002);
+app.listen(process.env.PORT || 3003, async () => {
+    console.log("API Started linstening in port " + process.env.PORT);
 });
